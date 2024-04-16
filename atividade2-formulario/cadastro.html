@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        h2 {
+            margin: 15px 15px;
+        }
+        div {
+            margin: 5px;
+        }
+        fieldset {
+            padding: 15px;
+            margin: 15px;
+        }
+            legend {
+                font-size: 16px;
+            }
+        p {
+            margin: 0;
+        }
+        img {
+            margin: 5px 15px;
+        }
+        .dados-profissionais {
+            padding: 0;
+        }
+            .dados-profissionais div {
+                margin: 20px;
+            }
+            .dados-profissionais legend {
+                margin-left: 15px;
+            }
+        .enviar-limpar {
+            margin: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <form action="" method="">
+        <fieldset> <!--TAG NÃO TAVA NO SLIDE-->
+            <legend>Dados Pessoais</legend> <!--TAG NÃO TAVA NO SLIDE-->
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="endereco">Endereço: </label>
+                <input type="text" name="nome" id="endereco">
+            </div>
+            <div>
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="nome" id="cidade">
+            </div>
+            <div>
+                <label for="estado">Estado: </label>
+                <select id="estado"> <!--TAG NÃO TAVA NO SLIDE-->
+                    <option value="df">DF</option>
+                    <option value="df">SP</option>
+                    <option value="df">RJ</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="dados-profissionais">
+            <legend>Dados profissionais</legend>
+            <!--Natureza do cargo-->
+            <div>
+                <p>Natureza do Cargo</p>
+                <input type="radio" name="cargo" id="gerencia" value="Gerência">
+                <label for="gerencia">Gerência</label>
+                <input type="radio" name="cargo" id="financeiro" value="Financeiro">
+                <label for="financeiro">Financeiro</label>
+                <input type="radio" name="cargo" id="recepcao" value="Recepção">
+                <label for="recepcao">Recepção</label>
+                <input type="radio" name="cargo" id="administrativo" value="Administrativo">
+                <label for="administrativo">Administrativo</label>
+                <input type="radio" name="cargo" id="juridico" value="Jurídico">
+                <label for="juridico">Jurídico</label>
+            </div>
+            <div>
+                <p>Área de interesse</p>
+                <!--Área de interesse-->
+                <input type="checkbox" name="computacao" id="computacao" value="true">
+                <label for="computacao">Computação</label>
+                <input type="checkbox" name="biologia" id="biologia" value="true">
+                <label for="biologia">Biologia</label>
+                <input type="checkbox" name="meioambiente" id="meioambiente" value="true">
+                <label for="meioambiente">Meio Ambiente</label>
+                <input type="checkbox" name="engenharia" id="engenharia" value="true">
+                <label for="engenharia">Engenharia</label>
+                <input type="checkbox" name="historia" id="historia" value="true">
+                <label for="historia">História</label>
+            </div>
+            <div>
+                <label for="minicurriculo">Minicurrículo: </label>
+                <textarea></textarea>
+            </div>
+        </fieldset>
+
+        <div class="enviar-limpar">
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="limpar" value="Limpar">
+        </div>
+
+        <img src="spfc.png" width="50px" height="50px">
+
+        <!--Botão genérico (este não necessariamente limpa o formulário, é necessário configurar)-->
+        <!--<input type="button" name="limpar" value="Limpar">-->
+        
+        <!--Checkbox-->
+        <!--<input type="checkbox" name="contrato" id="contrato" value="sim">
+        <label for="contrato">Aceito os termos do contrato.</label>-->
+
+        <!--Botão submit com imagem-->
+        <!--<input type="image" name="botao" src="spfc.png" width="50px" heigth="50px">-->
+
+        <!--Limpar informações do formulário digitados anteriormente-->
+        <!--<input type="reset" name="reset" value="Limpar">-->
+
+        <!--Enviar arquivo-->
+        <!--<input type="file" name="anexo">-->
+
+        <!--Enviar ou receber informações de forma escondida do usuário-->
+        <!--<input type="hidden" name="codigo" value="abc123">-->
+
+        <!--Digitar textos grandes, com quebras de linha inclusive-->
+        <!--<textarea name="texto">Digite algo: </textarea>-->
+    </form>
+</body>
+</html>
