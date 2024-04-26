@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - JavaScript</title>
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+    <h1>Atividade 3</h1>
+    <form class="" method="post">
+        <label>Data e hora atuais: </label>
+        <input type="text" id="txtRetornoDataHora" value="">
+        <input type="button" onclick="javascript:dataHora()" value="Saber">
+        <br>
+        <br>
+        <label>Digite o CPF: </label>
+        <input type="text" id="txtValidadeCPF" value="">
+        <input type="button" onclick="javascript:validarCPF()" value="Validar">
+        <br>
+        <br>
+        <label>Digite o CNPJ: </label>
+        <input type="text" id="txtValidadeCNPJ" value="">
+        <input type="button" onclick="javascript:validarCNPJ()" value="Validar">
+        <br>
+        <br>
+        <label>Valor Absoluto: </label>
+        <input type="text" id="txtRetornoValorAbsoluto" value="">
+        <input type="button" onclick="javascript:valorAbsoluto()" value="Retornar Valor Absoluto">
+        <br>
+        <br>
+        <label>Número fracionário: </label>
+        <input type="text" id="txtRetornoNumeroArredondado" value="">
+        <input type="button" onclick="javascript:arredondar()" value="Arredondar">
+        <br>
+        <br>
+        <label>Venda (taxa da comissão = 0.1): </label>
+        <input type="number" id="venda" value="">
+        <input type="button" onclick="javascript:comissao()" value="Calcular Comissão">
+        <input type="text" id="txtComissaoPorVenda" value="">
+    </form>
+</body>
+</html>
